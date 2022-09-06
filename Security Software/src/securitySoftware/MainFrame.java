@@ -1,13 +1,13 @@
-package secsoftware;
+package securitySoftware;
 
 import com.formdev.flatlaf.FlatLightLaf;
 
 /**
  * @author Tommy
  */
-public class mainFrame extends javax.swing.JFrame {
+public class MainFrame extends javax.swing.JFrame {
 
-    public mainFrame() {
+    public MainFrame() {
         FlatLightLaf.setup();
         initComponents();
     }
@@ -23,7 +23,6 @@ public class mainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Security Software");
         setName("fraMain"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
 
         panContent.setPreferredSize(new java.awt.Dimension(1000, 720));
@@ -83,7 +82,7 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void btnPasswordManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPasswordManagerActionPerformed
         // Instancing Password class
-        fraPassword fpwd = new fraPassword();
+        FraPassword fpwd = new FraPassword();
 
         // Pane content is cleared
         panContent.removeAll();
